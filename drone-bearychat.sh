@@ -1,8 +1,5 @@
 #!/bin/sh
-BUILT_STATUS='Unknown'
-if [ -n "$DRONE_BUILD_STATUS" ] ; then
-  BUILT_STATUS="$DRONE_BUILD_STATUS"
-fi
+BUILT_STATUS="$DRONE_BUILD_STATUS"
 
 BUILT_COLOR='#C9CCD1'
 if [ "$BUILT_STATUS" = 'success' ] ; then
