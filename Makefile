@@ -1,6 +1,6 @@
 .PHONY:build
 build:
-	docker build -t decent/drone-plugin-bearchat ./
+	docker build -t decent/drone-plugin-bearychat ./
 
 publish:
-	docker push decent/drone-plugin-bearchat
+	docker push decent/drone-plugin-bearychat
