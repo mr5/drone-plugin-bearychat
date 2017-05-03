@@ -5,6 +5,9 @@ machine:
 dependencies:
   override:
     - make build
+test:
+  override:
+    - echo 'pass'
 
 deployment:
   hub:
