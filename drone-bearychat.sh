@@ -8,7 +8,7 @@ fi
 BUILT_COLOR='#C9CCD1'
 if [ "$BUILT_STATUS" = 'success' ] 
 then
-  BUILT_COLOR='#4BC0C0'
+  BUILT_COLOR='#00bfa5'
   if [ "$BUILT_STATUS" != "$DRONE_PREV_BUILD_STATUS" ] 
   then
     BUILT_STATUS='Fixed'
@@ -17,7 +17,7 @@ fi
 
 if [ "$BUILT_STATUS" = 'failure' ] 
 then
-  BUILT_COLOR='#FF6384'
+  BUILT_COLOR='#f50057'
 fi
 
 curl $PLUGIN_URL \
