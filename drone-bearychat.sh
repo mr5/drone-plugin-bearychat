@@ -29,7 +29,7 @@ curl $PLUGIN_URL \
   \"markdown\": true,
   \"attachments\": [
     {
-      \"text\": \"[${DRONE_COMMIT_SHA}](${DRONE_COMMIT_LINK}) ${DRONE_COMMIT_MESSAGE} - ${DRONE_COMMIT_AUTHOR}\",
+      \"text\": \"[${DRONE_COMMIT_SHA:0:7}](${DRONE_COMMIT_LINK}) ${DRONE_COMMIT_MESSAGE} - ${DRONE_COMMIT_AUTHOR}\",
       \"color\": \"${BUILT_COLOR}\"
     }
   ]
