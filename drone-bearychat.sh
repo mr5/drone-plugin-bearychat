@@ -17,7 +17,7 @@ curl $PLUGIN_URL \
   -H 'Content-Type: application/json' \
   -d "
 {
-  \"text\": \"*${DRONE_JOB_STATUS}*: build [#${DRONE_BUILD_NUMBER}](${DRONE_BUILD_LINK}), in ${DRONE_COMMIT_BRANCH} of [${DRONE_REPO_NAME}](${DRONE_REPO_LINK})${PLUGIN_EXTERNAL_MSG}\",
+  \"text\": \"**${DRONE_JOB_STATUS}**: build [#${DRONE_BUILD_NUMBER}](${DRONE_BUILD_LINK}), in ${DRONE_COMMIT_BRANCH} of [${DRONE_REPO_NAME}](${DRONE_REPO_LINK})${PLUGIN_EXTERNAL_MSG}\",
   \"channel\": \"$PLUGIN_CHANNEL\",
   \"markdown\": true,
   \"attachments\": [
